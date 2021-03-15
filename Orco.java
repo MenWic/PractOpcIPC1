@@ -2,6 +2,8 @@ public class Orco extends Bestias{
 
     //Metodo: contador de Instancias// 
     private static int contadorInstancias;
+
+    //Metodo estatico//
     public static int getInstancias(){
         return Orco.contadorInstancias;
     }

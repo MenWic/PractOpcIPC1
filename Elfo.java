@@ -1,4 +1,12 @@
 public class Elfo extends Heroes{
+
+     //Metodo: contador de Instancias//
+    private static int contadorInstancias;
+
+    //Metodo estatico: obtener Instancias//
+    public static int getInstancias(){
+        return contadorInstancias;
+    }
     
     //Constructor de Elfo//
     public Elfo(String nombre){
