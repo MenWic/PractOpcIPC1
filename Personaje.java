@@ -24,7 +24,7 @@ public class Personaje {
     public int obtenerArmadura(Personaje atacante){
         return this.getArmadura();
     }
-
+    
     //2)Metodo get: obtener ataque//
     public int obtenerAtaque(Personaje defensor){
         return this.getAtaque();
@@ -34,8 +34,7 @@ public class Personaje {
     public void recibirAtaque(Personaje atacante){
         System.out.println(" " + atacante.getNombre() + " atacará a "+ this.getNombre());
 
-    //4)Metodo Defensor: daño por recibir//
-        //Variable defensor: daño por recibir
+    //4)Metodo Defensor: variable daño por recibir//
         int dañoPorRecibir = this.obtenerArmadura(atacante) - atacante.obtenerAtaque(this);
         if (dañoPorRecibir <= 0){
             this.vida += dañoPorRecibir;
@@ -43,15 +42,15 @@ public class Personaje {
         else{
             dañoPorRecibir = 0;
         }
-        System.out.println(" "+atacante.getNombre()+ " atacó a  " + this.getNombre() + ", inflingió un año de: " + dañoPorRecibir  + ", le queda vida: "+ this.getVida());
+        System.out.println(" "+ atacante.getNombre()+ " atacó a  " + this.getNombre() + ", inflingió un año de: " + dañoPorRecibir  + ", le queda vida: "+ this.getVida());
     }
 
     //Metodo: presentar al Personaje//
     public void saludar(){
-        System.out.println("Hola,soy " + this.nombre + ", nos vemos en la batalla!");
+        System.out.println("Hola,soy  " + this.nombre + ", nos vemos en la batalla! ");
     }
 
-    //Metodos get para obtener datos almacenados en las variables//
+    //Metodo para obtener datos almacenados en variables//
     public String getNombre(){
         return this.nombre;
     }

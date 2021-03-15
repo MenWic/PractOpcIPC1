@@ -4,7 +4,7 @@ public class Bestias extends Personaje {
     private static int ataqueMaximo = 90;
     
     //Constructor de Bestias//
-    public Bestias(int vida, int armadura, String nombre){
+    public Bestias(String nombre, int vida, int armadura){
         super(nombre, vida, armadura, Bestias.ataqueMaximo, false);
     }
     
